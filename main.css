@@ -1,0 +1,574 @@
+/*
+    Design by yepgoryo
+*/
+
+@font-face {
+    font-family: "Texturina";
+    src: url("fonts/Texturina-VariableFont_opsz\,wght.ttf");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #fff;
+    font-family: "Texturina", sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.center__vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo .logo__image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 10px;
+}
+
+.logo .logo__text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo .logo__text .logo__text__big {
+    font-size: 36pt;
+    font-weight: 900;
+    line-height: 38px;
+}
+
+.logo .logo__text .logo__text__small {
+    font-size: 14pt;
+    font-weight: 400;
+}
+
+header nav, footer .footer__right__section nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header nav ul, footer .footer__right__section nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    padding-left: 50px;
+    list-style: none;
+    font-size: 18pt;
+}
+
+header nav ul a, header nav ul a:active, header nav ul a:visited, footer .footer__right__section nav ul a, footer .footer__right__section nav ul a:active, footer .footer__right__section nav ul a:visited {
+    color: #000;
+}
+
+.hero__wrapper {
+    background: #0000007c url('img/juergen_sieber-drechsler-3394311_1920.jpg') no-repeat center;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.hero__wrapper .hero__message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin-left: 55%;
+    width: 455px;
+}
+
+.hero__wrapper .hero__message .hero__title {
+    color: #fff;
+    font-size: 64pt;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.hero__wrapper .hero__message .hero__title .hero__title__bold {
+    font-weight: 900;
+}
+
+.hero__wrapper .hero__message .hero__button, .hero__wrapper .hero__message .hero__button:active {
+    font-size: 28pt;
+    color: #fff;
+    border: 2px solid #fff;
+    text-align: center;
+    text-align: center;
+    border-radius: 10px;
+    line-height: 46px;
+    padding-bottom: 16px;
+    width: 80%;
+    margin: 0 auto;
+    transition: .3s ease;
+}
+
+.hero__wrapper .hero__message .hero__button:hover {
+    background: #fff;
+    color: #000;
+}
+
+.main__heading__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.main__heading__wrapper .main__heading__wrapper__image__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main__heading__wrapper .main__heading__wrapper__text {
+    color: #000;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.main__heading__wrapper .main__heading__wrapper__text .main__heading__wrapper__text__heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 18pt;
+}
+
+.main__heading__wrapper .main__heading__wrapper__text .main__heading__wrapper__text__heading .main__heading__wrapper__text__emphasis {
+    display: inline-block;
+    background: #000;
+    color: #fff;
+    line-height: 48px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    border-radius: 60px;
+}
+
+.main__heading__wrapper .main__heading__wrapper__text p {
+    font-size: 18pt;
+    width: 400px;
+    margin: 0 auto;
+}
+
+.main__aspect__blocks {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    gap: 50px;
+}
+
+.main__aspect__blocks .main__aspect__block {
+    background: #d9d9d9ff;
+    border-radius: 50px;
+    border: 2px solid #000;
+    padding: 30px;
+    width: 340px;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main__aspect__blocks .main__aspect__block h1 {
+    font-size: 24pt;
+}
+
+.main__aspect__blocks .main__aspect__block p {
+    font-size: 12pt;
+}
+
+.main__aspect__blocks .main__aspect__block .main__aspect__block__image {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.main__aspect__blocks .main__aspect__block .main__aspect__block__text {
+    padding-top: 50px;
+}
+
+.main__reviews {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.main__reviews .main__reviews__text {
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.main__reviews .main__reviews__text .main__reviews__text__heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 26pt;
+}
+
+.main__reviews .main__reviews__text .main__reviews__text__heading .main__reviews__text__emphasis {
+    display: inline-block;
+    background: #000;
+    color: #fff;
+    line-height: 75px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    border-radius: 60px;
+}
+
+.main__reviews .main__reviews__review__image__container .main__reviews__review__image {
+    border-radius: 135px;
+    box-shadow: 0 0 30px #0000007c;
+}
+
+.main__reviews .main__reviews__review__image__container .main__reviews__review__image__right {
+    margin-left: 70px;
+}
+
+.main__reviews .main__reviews__review__image__container .main__reviews__review__image__left {
+    margin-right: 70px;
+}
+
+.main__reviews .main__reviews__review__leftside, .main__reviews .main__reviews__review__rightside {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.main__reviews .main__reviews__review__message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main__reviews .main__reviews__review__message h1 {
+    font-size: 32pt;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.main__reviews .main__reviews__review__message .main__reviews__review__message__text {
+    font-size: 14pt;
+    color: #fff;
+    background: #000;
+    border-radius: 140px;
+    padding: 50px;
+    text-align: center;
+    width: 600px;
+}
+
+.main__reviews .main__reviews__review__image__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main__contact__form {
+    background: #000;
+    color: #fff;
+    text-align: center;
+}
+
+.main__contact__form h1 {
+    font-size: 62pt;
+}
+
+.main__contact__form p {
+    font-size: 22pt;
+    font-weight: 200;
+    padding: 30px;
+}
+
+.main__contact__form .main__contact__form__input .main__contact__form__input__phone {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.main__contact__form .main__contact__form__input .main__contact__form__tel {
+    font-family: "Texturina", sans-serif;
+    width: 200px;
+    height: 63px;
+    outline: none;
+    border-radius: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 16px;
+    font-size: 24pt;
+}
+
+.main__contact__form .main__contact__form__input .main__contact__form__send {
+    background: #fff;
+    cursor: pointer;
+    font-family: "Texturina", sans-serif;
+    font-size: 24pt;
+    font-weight: 600;
+    padding-left: 50px;
+    padding-right: 50px;
+    height: 48px;
+    margin-left: 20px;
+    border-radius: 25px;
+    padding-bottom: 60px;
+}
+
+.main__contact__form .main__contact__form__input {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+.main__contact__form .main__contact__form__input img {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.main__contact__form .main__contact__form__input__icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+    background: #d9d9d9ff;
+    padding: 50px;
+}
+
+footer .footer__left__section p {
+    text-align: right;
+    color: #5a5a5aff;
+}
+
+footer .footer__right__section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1100px) {
+    .main__reviews .main__reviews__review__message .main__reviews__review__message__text {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .hero__wrapper .hero__message {
+        margin: 0 auto;
+    }
+
+    .main__heading__wrapper {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    
+    .main__heading__wrapper .main__heading__wrapper__image {
+        margin: 0 auto;
+    }
+
+    .main__heading__wrapper .main__heading__wrapper__text {        
+        padding-top: 0;
+    }
+
+    .main__aspect__blocks {
+        grid-template-rows: auto;
+        grid-template-columns: auto;
+    }
+
+    .main__reviews .main__reviews__review__image__container .main__reviews__review__image__right, .main__reviews .main__reviews__review__image__container .main__reviews__review__image__left {
+        margin: 0 auto;
+    }
+
+    .main__reviews .main__reviews__review__leftside {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .main__reviews .main__reviews__review__rightside {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .main__reviews .main__reviews__review__message {
+        margin-top: 50px;
+    }
+
+    .main__reviews .main__reviews__review__message .main__reviews__review__message__text {
+        width: 60%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    header {
+        flex-direction: column;
+    }
+
+    header nav {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    header nav ul, footer .footer__right__section nav ul {
+        padding-left: 0;
+    }
+
+    .logo {
+        justify-content: center;
+    }
+
+    footer {
+        flex-direction: column-reverse;
+    }
+
+    footer .footer__left__section p {
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 610px) {
+    .main__contact__form .main__contact__form__input {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .main__reviews .main__reviews__text {
+        width: 80%;
+    }
+
+    .main__reviews .main__reviews__review__message .main__reviews__review__message__text {
+        border-radius: 85px;
+    }
+
+    .main__aspect__blocks .main__aspect__block {
+        width: 260px;
+    }
+
+    .main__heading__wrapper .main__heading__wrapper__text p {
+        width: 80%;
+    }
+
+    .main__contact__form .main__contact__form__input .main__contact__form__send {
+        margin: 0 auto;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .hero__wrapper .hero__message {
+        width: 90%;
+    }
+
+    .hero__wrapper .hero__message .hero__title {
+        font-size: 42pt;
+    }
+}
+
+.single__heading {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+    font-size: 18pt;
+    font-weight: 600;
+}
+
+/* About */
+
+.picture__paragraph__left, .picture__paragraph__right {
+    padding: 30px;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    height: 200px;
+    gap: 20px;
+}
+
+.picture__from__paragraph {
+    height: auto;
+    border-radius: 20px;
+}
+
+.picture__text__paragraph {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 18pt;
+    text-align: center;
+    width: 350px;
+}
+
+@media screen and (max-width: 600px) {
+    .picture__from__paragraph {
+        width: max-content;
+        height: 200px;
+        margin: 0 auto;
+        font-size: 12pt;
+    }
+
+    .picture__text__paragraph {
+        padding-top: 30px;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .picture__paragraph__left {
+        flex-direction: column;
+        gap: 0;
+        height: auto;
+    }
+
+    .picture__paragraph__right {
+        flex-direction: column-reverse;
+        gap: 0;
+        height: auto;
+    }
+}
+
+/* Contact */
+
+.single__paragraph {
+    font-size: 16pt;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 100px;
+}
