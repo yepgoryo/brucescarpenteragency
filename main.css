@@ -12,6 +12,10 @@
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: #fff;
     font-family: "Texturina", sans-serif;
